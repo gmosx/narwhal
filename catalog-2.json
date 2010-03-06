@@ -87,19 +87,26 @@
             "lib": [
                 "lib"
             ],
-            "lean": [
-                "lib",
-                "engines"
-            ],
-            "descriptorUrl": "http://github.com/tlrobinson/narwhal/raw/master/package.json",
-            "packageUrl": "http://github.com/tlrobinson/narwhal/zipball/master",
+            "lean": {
+                "include": [
+                    "engines/default/**/*",
+                    "engines/rhino/bootstrap.js",
+                    "engines/rhino/lib/**/*",
+                    "engines/rhino/package.json",
+                    "lib/**/*",
+                    "narwhal.js",
+                    "package.json"
+                ]
+            },
+            "descriptorUrl": "http://github.com/280north/narwhal/raw/master/package.json",
+            "packageUrl": "http://github.com/280north/narwhal/zipball/master",
             "packageArchive": "zip",
             "source": {
                 "type": "github",
-                "user": "tlrobinson",
+                "user": "280north",
                 "packageName": "narwhal",
-                "descriptorUrl": "http://github.com/tlrobinson/narwhal/raw/master/package.json",
-                "url": "http://github.com/tlrobinson/narwhal/zipball/master",
+                "descriptorUrl": "http://github.com/280north/narwhal/raw/master/package.json",
+                "url": "http://github.com/280north/narwhal/zipball/master",
                 "archive": "zip"
             },
             "dependencies": []
@@ -127,15 +134,15 @@
                 "1",
                 "1"
             ],
-            "descriptorUrl": "http://github.com/tlrobinson/narwhal-jsc/raw/master/package.json",
-            "packageUrl": "http://github.com/tlrobinson/narwhal-jsc/zipball/master",
+            "descriptorUrl": "http://github.com/280north/narwhal-jsc/raw/master/package.json",
+            "packageUrl": "http://github.com/280north/narwhal-jsc/zipball/master",
             "packageArchive": "zip",
             "source": {
                 "type": "github",
-                "user": "tlrobinson",
+                "user": "280north",
                 "packageName": "narwhal-jsc",
-                "descriptorUrl": "http://github.com/tlrobinson/narwhal-jsc/raw/master/package.json",
-                "url": "http://github.com/tlrobinson/narwhal-jsc/zipball/master",
+                "descriptorUrl": "http://github.com/280north/narwhal-jsc/raw/master/package.json",
+                "url": "http://github.com/280north/narwhal-jsc/zipball/master",
                 "archive": "zip"
             },
             "contributors": [
@@ -177,6 +184,42 @@
                 {
                     "name": "Tom Robinson",
                     "url": "http://tlrobinson.net/"
+                }
+            ],
+            "version": []
+        },
+        "narwhal-v8cgi": {
+            "name": "narwhal-v8cgi",
+            "dependencies": [
+                "narwhal"
+            ],
+            "engine": "v8cgi",
+            "author": {
+                "name": "Sergey Berezhnoy",
+                "url": "http://http://github.com/veged/"
+            },
+            "description": "v8cgi engine support for Narwhal",
+            "keywords": [
+                "narwhal",
+                "engine",
+                "v8cgi",
+                "v8"
+            ],
+            "descriptorUrl": "http://github.com/veged/narwhal-v8cgi/raw/master/package.json",
+            "packageUrl": "http://github.com/veged/narwhal-v8cgi/zipball/master",
+            "packageArchive": "zip",
+            "source": {
+                "type": "github",
+                "user": "veged",
+                "packageName": "narwhal-v8cgi",
+                "descriptorUrl": "http://github.com/veged/narwhal-v8cgi/raw/master/package.json",
+                "url": "http://github.com/veged/narwhal-v8cgi/zipball/master",
+                "archive": "zip"
+            },
+            "contributors": [
+                {
+                    "name": "Sergey Berezhnoy",
+                    "url": "http://http://github.com/veged/"
                 }
             ],
             "version": []
@@ -264,6 +307,12 @@
             "licenses": [
                 {
                     "type": "MPL"
+                },
+                {
+                    "type": "GPL 2.0"
+                },
+                {
+                    "type": "LGPL 2.1"
                 },
                 {
                     "type": "MIT"
@@ -426,15 +475,15 @@
                 "1",
                 "2"
             ],
-            "descriptorUrl": "http://github.com/tlrobinson/jack/raw/master/package.json",
-            "packageUrl": "http://github.com/tlrobinson/jack/zipball/master",
+            "descriptorUrl": "http://github.com/280north/jack/raw/master/package.json",
+            "packageUrl": "http://github.com/280north/jack/zipball/master",
             "packageArchive": "zip",
             "source": {
                 "type": "github",
-                "user": "tlrobinson",
+                "user": "280north",
                 "packageName": "jack",
-                "descriptorUrl": "http://github.com/tlrobinson/jack/raw/master/package.json",
-                "url": "http://github.com/tlrobinson/jack/zipball/master",
+                "descriptorUrl": "http://github.com/280north/jack/raw/master/package.json",
+                "url": "http://github.com/280north/jack/zipball/master",
                 "archive": "zip"
             }
         },
@@ -451,8 +500,7 @@
             },
             "email": "george.moschovitis@gmail.com",
             "dependencies": [
-                "jack",
-                "template"
+                "jack"
             ],
             "contributors": [
                 {
@@ -619,15 +667,15 @@
                 "dom",
                 "xmlhttprequest"
             ],
-            "descriptorUrl": "http://github.com/tlrobinson/browserjs/raw/master/package.json",
-            "packageUrl": "http://github.com/tlrobinson/browserjs/zipball/master",
+            "descriptorUrl": "http://github.com/280north/browserjs/raw/master/package.json",
+            "packageUrl": "http://github.com/280north/browserjs/zipball/master",
             "packageArchive": "zip",
             "source": {
                 "type": "github",
-                "user": "tlrobinson",
+                "user": "280north",
                 "packageName": "browserjs",
-                "descriptorUrl": "http://github.com/tlrobinson/browserjs/raw/master/package.json",
-                "url": "http://github.com/tlrobinson/browserjs/zipball/master",
+                "descriptorUrl": "http://github.com/280north/browserjs/raw/master/package.json",
+                "url": "http://github.com/280north/browserjs/zipball/master",
                 "archive": "zip"
             },
             "contributors": [
@@ -995,40 +1043,57 @@
         },
         "jsdocs": {
             "name": "jsdocs",
-            "description": "Tool for generating template-formatted, multi-page HTML (or XML, JSON, or any other text-based) documentation from commented JavaScript source code.",
+            "description": "JavaScript documentation generator. Tool for generating template-formatted, multi-page HTML (or XML, JSON, or any other text-based) documentation from commented JavaScript source code.",
+            "version": [
+                "0",
+                "1",
+                "0"
+            ],
             "keywords": [
                 "jsdoc",
                 "documentation"
             ],
-            "author": {
-                "name": "Irakli Gozalishvili",
-                "url": "http://rfobic.wordpress.com/"
+            "maintainers": [
+                {
+                    "name": "Irakli Gozalishvili",
+                    "email": "rfobic@gmail.com",
+                    "web": "http://rfobic.wordpress.com/"
+                }
+            ],
+            "contributors": [
+                {
+                    "name": "Irakli Gozalishvili",
+                    "email": "rfobic@gmail.com"
+                }
+            ],
+            "bugs": {
+                "web": "http://github.com/Gozala/jsdocs/issues/"
             },
-            "email": "rfobic@gmail.com",
-            "lib": [
-                "lib"
+            "licenses": [
+                {
+                    "type": "MIT"
+                }
             ],
-            "lean": [
-                "lib",
-                "engines"
+            "repositories": [
+                {
+                    "type": "git",
+                    "url": "git://github.com/Gozala/jsdocs.git"
+                }
             ],
-            "version": {
-                "label": "0.1",
-                "numeric": [
-                    0,
-                    1
-                ],
-                "status": "development"
+            "os": [
+                "linux",
+                "macos",
+                "win"
+            ],
+            "cpu": [
+                "x86",
+                "ppc",
+                "x86_64"
+            ],
+            "directories": {
+                "lib": "lib",
+                "bin": "bin"
             },
-            "license": [
-                "MPL 1.1",
-                "GPL 2.0",
-                "LGPL 2.1"
-            ],
-            "dependencies": [
-                "syntax-stroop",
-                "seethrough"
-            ],
             "descriptorUrl": "http://github.com/Gozala/jsdocs/raw/master/package.json",
             "packageUrl": "http://github.com/Gozala/jsdocs/zipball/master",
             "packageArchive": "zip",
@@ -1040,12 +1105,7 @@
                 "url": "http://github.com/Gozala/jsdocs/zipball/master",
                 "archive": "zip"
             },
-            "contributors": [
-                {
-                    "name": "Irakli Gozalishvili",
-                    "url": "http://rfobic.wordpress.com/"
-                }
-            ]
+            "dependencies": []
         },
         "syntax-stroop": {
             "name": "syntax-stroop",
@@ -1276,7 +1336,7 @@
             "version": [
                 "0",
                 "1",
-                "2"
+                "3"
             ],
             "descriptorUrl": "http://github.com/280north/jake/raw/master/package.json",
             "packageUrl": "http://github.com/280north/jake/zipball/master",
@@ -1610,7 +1670,7 @@
                 "email": "sergi.mansilla@gmail.com"
             },
             "jars": [
-                "jars/mongo-0.11.jar"
+                "mongo-1.2.jar"
             ],
             "email": "sergi.mansilla@gmail.com",
             "dependencies": [],
@@ -1845,9 +1905,7 @@
         "ojunit": {
             "name": "ojunit",
             "dependencies": [
-                "narwhal",
-                "objective-j",
-                "cappuccino"
+                "narwhal"
             ],
             "author": {
                 "name": "Tom Robinson",
@@ -1863,6 +1921,15 @@
                 },
                 {
                     "name": "Martin Hacker"
+                },
+                {
+                    "name": "Derek Hammer"
+                },
+                {
+                    "name": "Francisco Tolmasky"
+                },
+                {
+                    "name": "Andrew Burkhalter"
                 }
             ],
             "description": "A simple Objective-J unit test framework.",
@@ -1875,6 +1942,11 @@
             "objj-frameworks": [
                 "Framework"
             ],
+            "version": [
+                "0",
+                "1",
+                "0"
+            ],
             "descriptorUrl": "http://github.com/280north/ojunit/raw/master/package.json",
             "packageUrl": "http://github.com/280north/ojunit/zipball/master",
             "packageArchive": "zip",
@@ -1885,8 +1957,7 @@
                 "descriptorUrl": "http://github.com/280north/ojunit/raw/master/package.json",
                 "url": "http://github.com/280north/ojunit/zipball/master",
                 "archive": "zip"
-            },
-            "version": []
+            }
         },
         "qxoo": {
             "name": "qxoo",
@@ -2299,42 +2370,6 @@
             },
             "dependencies": []
         },
-        "narwhal-v8cgi": {
-            "name": "narwhal-v8cgi",
-            "dependencies": [
-                "narwhal"
-            ],
-            "engine": "v8cgi",
-            "author": {
-                "name": "Sergey Berezhnoy",
-                "url": "http://http://github.com/veged/"
-            },
-            "description": "v8cgi engine support for Narwhal",
-            "keywords": [
-                "narwhal",
-                "engine",
-                "v8cgi",
-                "v8"
-            ],
-            "descriptorUrl": "http://github.com/veged/narwhal-v8cgi/raw/master/package.json",
-            "packageUrl": "http://github.com/veged/narwhal-v8cgi/zipball/master",
-            "packageArchive": "zip",
-            "source": {
-                "type": "github",
-                "user": "veged",
-                "packageName": "narwhal-v8cgi",
-                "descriptorUrl": "http://github.com/veged/narwhal-v8cgi/raw/master/package.json",
-                "url": "http://github.com/veged/narwhal-v8cgi/zipball/master",
-                "archive": "zip"
-            },
-            "contributors": [
-                {
-                    "name": "Sergey Berezhnoy",
-                    "url": "http://http://github.com/veged/"
-                }
-            ],
-            "version": []
-        },
         "CappuccinoResource": {
             "name": "CappuccinoResource",
             "dependencies": [
@@ -2558,8 +2593,7 @@
             ],
             "version": [
                 "0",
-                "0",
-                "1"
+                "2"
             ],
             "descriptorUrl": "http://github.com/280north/commonjs-shrinksafe/raw/master/package.json",
             "packageUrl": "http://github.com/280north/commonjs-shrinksafe/zipball/master",
@@ -2581,15 +2615,16 @@
             "description": "Haml ported to server-side Javascript. This is a traditional server-side templating language.",
             "keywords": [
                 "haml",
-                "template"
+                "template",
+                "nodejs"
             ],
             "author": {
                 "name": "Tim Caswell"
             },
             "version": [
                 "0",
-                "0",
-                "1"
+                "1",
+                "2"
             ],
             "descriptorUrl": "http://github.com/creationix/haml-js/raw/master/package.json",
             "packageUrl": "http://github.com/creationix/haml-js/zipball/master",
@@ -2716,6 +2751,112 @@
                     "name": "George Moschovitis"
                 }
             ],
+            "version": []
+        },
+        "reform": {
+            "name": "reform",
+            "author": {
+                "name": "Nick Fitzgerald"
+            },
+            "description": "A Narwhal module for working with HTML forms, similar to Django's forms.",
+            "dependencies": [],
+            "contributors": [
+                {
+                    "name": "Nick Fitzgerald"
+                }
+            ],
+            "keywords": [
+                "html",
+                "form",
+                "forms"
+            ],
+            "descriptorUrl": "http://github.com/fitzgen/reform/raw/master/package.json",
+            "packageUrl": "http://github.com/fitzgen/reform/zipball/master",
+            "packageArchive": "zip",
+            "source": {
+                "type": "github",
+                "user": "fitzgen",
+                "packageName": "reform",
+                "descriptorUrl": "http://github.com/fitzgen/reform/raw/master/package.json",
+                "url": "http://github.com/fitzgen/reform/zipball/master",
+                "archive": "zip"
+            },
+            "version": []
+        },
+        "jdbc": {
+            "name": "jdbc",
+            "contributors": [
+                {
+                    "name": "Tom Robinson",
+                    "url": "http://tlrobinson.net/",
+                    "email": "tlrobinson@280north.com"
+                }
+            ],
+            "descriptorUrl": "http://github.com/tlrobinson/commonjs-jdbc/raw/master/package.json",
+            "packageUrl": "http://github.com/tlrobinson/commonjs-jdbc/zipball/master",
+            "packageArchive": "zip",
+            "source": {
+                "type": "github",
+                "user": "tlrobinson",
+                "name": "commonjs-jdbc",
+                "packageName": "jdbc",
+                "descriptorUrl": "http://github.com/tlrobinson/commonjs-jdbc/raw/master/package.json",
+                "url": "http://github.com/tlrobinson/commonjs-jdbc/zipball/master",
+                "archive": "zip"
+            },
+            "dependencies": [],
+            "version": []
+        },
+        "mysql-jdbc": {
+            "name": "mysql-jdbc",
+            "dependencies": [
+                "jdbc"
+            ],
+            "contributors": [
+                {
+                    "name": "Tom Robinson",
+                    "url": "http://tlrobinson.net/",
+                    "email": "tlrobinson@280north.com"
+                }
+            ],
+            "descriptorUrl": "http://github.com/tlrobinson/commonjs-mysql-jdbc/raw/master/package.json",
+            "packageUrl": "http://github.com/tlrobinson/commonjs-mysql-jdbc/zipball/master",
+            "packageArchive": "zip",
+            "source": {
+                "type": "github",
+                "user": "tlrobinson",
+                "name": "commonjs-mysql-jdbc",
+                "packageName": "mysql-jdbc",
+                "descriptorUrl": "http://github.com/tlrobinson/commonjs-mysql-jdbc/raw/master/package.json",
+                "url": "http://github.com/tlrobinson/commonjs-mysql-jdbc/zipball/master",
+                "archive": "zip"
+            },
+            "version": []
+        },
+        "sqlite-jdbc": {
+            "name": "sqlite-jdbc",
+            "dependencies": [
+                "jdbc"
+            ],
+            "contributors": [
+                {
+                    "name": "Tom Robinson",
+                    "url": "http://tlrobinson.net/",
+                    "email": "tlrobinson@280north.com"
+                }
+            ],
+            "descriptorUrl": "http://github.com/tlrobinson/commonjs-sqlite-jdbc/raw/master/package.json",
+            "packageUrl": "http://github.com/tlrobinson/commonjs-sqlite-jdbc/zipball/master",
+            "packageArchive": "zip",
+            "source": {
+                "type": "github",
+                "user": "tlrobinson",
+                "name": "commonjs-sqlite-jdbc",
+                "packageName": "sqlite-jdbc",
+                "descriptorUrl": "http://github.com/tlrobinson/commonjs-sqlite-jdbc/raw/master/package.json",
+                "url": "http://github.com/tlrobinson/commonjs-sqlite-jdbc/zipball/master",
+                "archive": "zip"
+            },
             "version": []
         }
     }
