@@ -334,6 +334,11 @@
             "type": "github",
             "user": "tlrobinson",
             "name": "commonjs-sqlite-jdbc"
+        },
+        "inflection": {
+            "type": "github",
+            "user": "gmosx",
+            "name": "inflection"
         }
     }
 }
