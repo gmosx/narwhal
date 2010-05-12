@@ -4,6 +4,7 @@
 // -- gozala Irakli Gozalishvili
 // -- tschaub
 // -- nrstott Nathan Stott
+// -- gmosx George Moschovitis Copyright (C) 2010 MIT License
 
 var engine = require("binary-engine"),
     B_ALLOC = engine.B_ALLOC,
@@ -201,6 +202,21 @@ var ByteString = exports.ByteString = function() {
     else
         return this;
 };
+
+/**
+ * Wrap a ByteString object around a Java bytes array. 
+ * The bytes are *not* copied (changing the underlying byte[] would 
+ * break the "immutability contract"of ByteString)
+ *
+ * CommonJS extension, also used in RingoJS.
+ */
+ByteString.wrap = function (javaBytes) {
+    var b = new ByteString();
+    b._bytes = javaBytes;
+    b._offset = 0;
+    b._length = Number(b._bytes.length);
+    return b;
+}
 
 ByteString.prototype = new Binary();
 
